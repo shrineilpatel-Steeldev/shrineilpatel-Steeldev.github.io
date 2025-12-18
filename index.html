@@ -1,9 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steel Pricing Dashboard</title>
-  <h2>HELLOO WOORLD</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackSteel Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/hero.js"></script>
+    <script src="components/product-card.js"></script>
+    <script src="components/footer.js"></script>
 </head>
+<body class="bg-gray-100">
+    <custom-navbar></custom-navbar>
+    <custom-hero></custom-hero>
+    
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Today's Deals</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <custom-product-card 
+                    title="Wireless Headphones" 
+                    price="59.99" 
+                    original-price="89.99" 
+                    rating="4.5"
+                    image="http://static.photos/technology/640x360/1">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Smart Watch" 
+                    price="129.99" 
+                    original-price="179.99" 
+                    rating="4.2"
+                    image="http://static.photos/technology/640x360/2">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Bluetooth Speaker" 
+                    price="39.99" 
+                    original-price="59.99" 
+                    rating="4.0"
+                    image="http://static.photos/technology/640x360/3">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Laptop Backpack" 
+                    price="29.99" 
+                    original-price="49.99" 
+                    rating="4.7"
+                    image="http://static.photos/technology/640x360/4">
+                </custom-product-card>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Recommended for You</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <custom-product-card 
+                    title="Coffee Maker" 
+                    price="49.99" 
+                    original-price="79.99" 
+                    rating="4.3"
+                    image="http://static.photos/food/640x360/1">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Yoga Mat" 
+                    price="24.99" 
+                    original-price="39.99" 
+                    rating="4.8"
+                    image="http://static.photos/wellness/640x360/1">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Desk Lamp" 
+                    price="34.99" 
+                    original-price="49.99" 
+                    rating="4.1"
+                    image="http://static.photos/office/640x360/1">
+                </custom-product-card>
+                <custom-product-card 
+                    title="Wireless Charger" 
+                    price="19.99" 
+                    original-price="29.99" 
+                    rating="4.4"
+                    image="http://static.photos/technology/640x360/5">
+                </custom-product-card>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
 </html>
